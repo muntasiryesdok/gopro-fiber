@@ -1,0 +1,8 @@
+# watcher.yml
+watchers:
+  - run_on_changes: true
+    include_ext: go
+    paths:
+      - /build
+
+# Note: Adjust the paths based on your project's directory structure.
