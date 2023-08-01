@@ -2,8 +2,8 @@
 **/.DS_Store
 
 # Dev build
-build/
-tmp/
+/build
+/tmp
 
 # Test
 *.out
