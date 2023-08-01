@@ -1,6 +1,0 @@
-mode: set
-github.com/create-go-app/fiber-go-template/pkg/routes/not_found_route.go:6.34,10.28 1 0
-github.com/create-go-app/fiber-go-template/pkg/routes/not_found_route.go:10.28,16.4 1 0
-github.com/create-go-app/fiber-go-template/pkg/routes/private_routes.go:10.34,24.2 6 1
-github.com/create-go-app/fiber-go-template/pkg/routes/public_routes.go:9.33,20.2 5 0
-github.com/create-go-app/fiber-go-template/pkg/routes/swagger_route.go:10.33,16.2 2 0
