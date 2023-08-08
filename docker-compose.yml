@@ -2,6 +2,7 @@ version: "3.8"
 
 services:
   gopro-fiber:
+    restart: always
     build:
       context: .
       dockerfile: Dockerfile
@@ -12,6 +13,30 @@ services:
       - dev-network
     volumes:
       - ./:/app
+
+  gopro-postgres:
+    image: postgres
+    container_name: gopro-postgres
+    networks:
+      - dev-network
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=postgres
+    volumes:
+      - ${HOME}/dev-postgres/data/:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: always
+
+  gopro-redis:
+    image: redis
+    container_name: gopro-redis
+    networks:
+      - dev-network
+    ports:
+      - "6379:6379"
+    restart: always
 
 networks:
   dev-network:
